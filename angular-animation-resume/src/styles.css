@@ -1,7 +1,0 @@
-/* You can add global styles to this file, and also import other style files */ 
-/* Add some highlight to the code */
-.token.comment{ color: #857F6B; font-style: italic; }
-.token.selector{ color: #ebeb27; }
-.token.property{ color: #88DCFE; }
-.token.punctuation{ color: #88DCFE; }
-.token.function{ color: #82AAFF; }

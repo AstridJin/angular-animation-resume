@@ -41,7 +41,7 @@ module.exports = "*{margin: 0; padding: 0;}\r\n*{box-sizing: border-box;}\r\n*::
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<html>\n<app-style-editor [styleEditorContent]=\"styleEditorContent\"></app-style-editor>\n<app-resume-editor [resumeEditorContent]=\"resumeEditorContent\"></app-resume-editor>\n\n</html>"
+module.exports = "<html>\r\n<app-style-editor [styleEditorContent]=\"styleEditorContent\"></app-style-editor>\r\n<app-resume-editor [resumeEditorContent]=\"resumeEditorContent\"></app-resume-editor>\r\n\r\n</html>"
 
 /***/ }),
 
@@ -152,7 +152,7 @@ module.exports = ".resumeEditor{\r\n    position: fixed; right: 0; top: 0;\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"resumeEditor\">\n  <pre><markdown ngPreserveWhitespaces>{{ resumeEditorContent }}</markdown></pre>\n</div>"
+module.exports = "<div class=\"resumeEditor\">\r\n  <pre><markdown ngPreserveWhitespaces>{{ resumeEditorContent }}</markdown></pre>\r\n</div>"
 
 /***/ }),
 

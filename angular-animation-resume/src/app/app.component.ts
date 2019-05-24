@@ -21,7 +21,7 @@ export class AppComponent {
 * Develope a WinForm application to do subjective image quality evaluation
 * Desgin and conduct an experiment with volunteers using developed application
 
-### [Animation Resume](https://shiningdan.github.io/react-animation-resume/) (Click to have a look!)
+### [Animation Resume](https://astridjin.github.io/angular-animation-resume/) (Click to have a look!)
 
 * Animation resume using React and Webpack
 

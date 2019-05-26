@@ -1,5 +1,6 @@
 <html #html>
 <app-style-editor #styleEditor [styleEditorContent]="styleEditorContent"></app-style-editor>
-<app-resume-editor #resumeEditor [resumeEditorContent]="resumeEditorContent"></app-resume-editor>
+<app-resume-editor #resumeEditor [styleEditor]="styleEditor" [resumeEditorContent]="resumeEditorContent">
+</app-resume-editor>
 
 </html>

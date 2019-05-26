@@ -1,6 +1,7 @@
-<div #styleEditor1 class="styleEditor" id="styleEditor">
+<div #styleEditor1 Class="styleEditor" id="styleEditor">
     <pre>{{ styleEditorContent }}</pre>
 </div>
-<div #styleEditor2 class="styleEditor fixed" style="opacity: 0; transition: 0s">
+<div #styleEditor2 class="styleEditor" id="fixed" style="opacity: 0; transition: 0s; overflow: hidden;"
+    (window:resize)="onResize($event)">
     <pre><ngx-prism language='css'>{{ completeStyleEditorContent }}</ngx-prism></pre>
 </div>

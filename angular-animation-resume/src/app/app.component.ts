@@ -1,8 +1,6 @@
-import { NgStyle } from '@angular/common';
 import { Component, OnInit, ViewChild, Renderer2, ElementRef } from "@angular/core";
 import { StyleEditorComponent } from "./style-editor/style-editor.component";
 import { ResumeEditorComponent } from "./resume-editor/resume-editor.component";
-import { DOMTestComponentRenderer } from '@angular/platform-browser-dynamic/testing/src/dom_test_component_renderer';
 
 @Component({
   selector: "app-root",
@@ -13,7 +11,7 @@ export class AppComponent implements OnInit {
   constructor(private renderer: Renderer2, private el: ElementRef) { };
   public styleContent = document.querySelector("style");
   public globalStyle: string = "";
-  public interval = 20;
+  public interval = 0.1;
 
   @ViewChild('styleEditor') styleEditor: StyleEditorComponent;
   @ViewChild('resumeEditor') resumeEditor: ResumeEditorComponent;
@@ -75,8 +73,18 @@ padding: .5em;
 border: 1px solid;
 margin: .5em;
 overflow: auto;
-width: 45vw; max-height: 95vh;
+max-height: 95vh;
 }
+@media screen and (min-width: 720px) {
+  .styleEditor {
+    width: 45vw;
+    }
+  }
+@media screen and (max-width: 720px) {
+  .styleEditor {
+    width: 97vw;
+    }
+  }
 `,
     `
 /* Add some highlight to the code */
@@ -102,13 +110,26 @@ transition: none;
 /* This is for code part */
 
 /* Then is for container putting my resume */
+@media screen and (min-width: 720px) {
+  .resumeEditor{
+    position: fixed; left: 50vw; top: 0;
+    width: 48vw; height: 95vh; 
+    }
+  }
+@media screen and (max-width: 720px) {
+  .styleEditor {
+    height: 49vh;
+    }
+  .resumeEditor{
+    position: fixed; left: 0; top: 50vh;
+    width: 97vw; height: 47vh; 
+    }
+}
 .resumeEditor{
-position: fixed; right: 0; top: 0;
-padding: .5em;  margin: .5em;
-width: 48vw; height: 95vh; 
-border: 1px solid;
-background: white; color: #222;
-overflow: auto;
+  padding: .5em;  margin: .5em;
+  border: 1px solid;
+  background: white; color: #222;
+  overflow: auto;
 }
 
 /* Okay, let's begin with the resume*/
@@ -159,7 +180,8 @@ padding: .5em;
 background: #ddd;
 }
 /*
-* I hope you enjoyed this.
+* Fertig!
+* Hope you like it. ^ ^ 
 */
 `
 

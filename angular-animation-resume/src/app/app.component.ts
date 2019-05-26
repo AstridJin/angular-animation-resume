@@ -52,7 +52,7 @@ German    B1, basic
 * 
 * Hello, I am Yujin Wang 
 *
-* I made this simple dynamic resume with React
+* I made this simple dynamic resume with Angular
 * Hope you like it :)
 */
 /* Let's go！Firstly add the transition effect to all elements */
@@ -181,7 +181,7 @@ background: #ddd;
 }
 /*
 * Fertig!
-* Hope you like it. ^ ^ 
+* Hope you enjoy it. ^ ^ 
 */
 `
 
